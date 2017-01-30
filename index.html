@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>The Code Review</h1>
+        </header>
+        <form action="index.html" method="post">
+        <div class="formdesc">    
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+            <hr>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="user_fullname" required placeholder="Required">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="mail" name="user_email" required placeholder="Required">
+                
+                <label for="tel">Phone Number</label>
+                <input type="tel" id="tel" name="user_tel">
+
+                <label for="address">Street Address</label>
+                <input type="tel" id="tel" name="user_tel">
+
+                <label for="city">City</label>
+                <input type="city" id="city" name="user_city">
+
+                <label for="state">State</label>
+                <select id ="state" name="user_state">
+                <optgroup label="State">
+                <option value="" disabled selected>Choose State</option>
+                <option value="ca">CA</option>
+                <option value="ny">NY</option>
+                <option value="tx">TX</option>
+                <option value="ar">AR</option>
+                </optgroup>
+                </select>
+
+                <label for="zipcode">Zip Code</label>
+                <input type="zipcode" id="zipcode" name="user_zipcode">
+            </fieldset>
+
+            <hr>
+            <fieldset>
+            <legend>Newsletter</legend>
+            <p>Select the newsletters you would like to receive</p>
+
+            <!-- Checkboxes -->
+            <input type="checkbox" id="html" value="htmlnews" name="html_news"><label>HTML News</label>
+            <br>
+            <input type="checkbox" id="css" value="cssnews" name="css_news"><label>CSS News</label>
+            <br>
+             <input type="checkbox" id="java" value="java_news" name="java_news"> <label>Javascript News</label>
+             <br><br>
+        
+            <!-- Radiobuttons -->
+            <label>Newsletter format</label><br>
+            <input type="radio" id="html" value="html" name="user_format"><label for="under_13" class="light">HTML</label><br>
+            <input type="radio" id="plain" value="plain" name="user_format"><label for="plaim" class="light">Plain Text</label>
+            <br><br>
+
+            <label for="textarea">Other topics you'd like to hear about</label>
+              <textarea id="textarea" name="user_textarea"></textarea>
+            </fieldset>
+
+            
+             <button type="submit">Sign Up</button>
+
+             <span class="copyright"><center>Copyright The Code Review</center></span>
+             <br>
+        </form>
+    </body>
+</html>
+
