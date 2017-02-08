@@ -56,12 +56,7 @@ input:focus {
     border: black 2px solid!important;
 }
 
-input[type="fullname"],
-input[type="address"],
-input[type="city"],
-input[type="zipcode"],
-input[type="email"],
-input[type="tel"],
+input[type="text"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
