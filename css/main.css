@@ -171,12 +171,7 @@ label.light {
   clear:both;
   } 
 
-  input[type="fullname"],
-  input[type="address"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="city"],
-  input[type="zipcode"]{
+  input[type="text"]{
   float: right;
   width: 70%;
   }
